@@ -72,21 +72,6 @@ class IStoreSensor(CoordinatorEntity, SensorEntity):
             return None
 
         # Convert sensor status values to strings
-        # if self._attr_name.lower() == "running state":
-        #     return "On" if value == 1 else "Off"
-
-        # if self._attr_name.lower() == "compressor status":
-        #     return "On" if value == 1 else "Off"
-
-        # if self._attr_name.lower() == "4 way status":
-        #     return "On" if value == 1 else "Off"
-
-        # if self._attr_name.lower() == "fan status":
-        #     return "On" if value == 1 else "Off"
-
-        # if self._attr_name.lower() == "defrost status":
-        #     return "On" if value == 1 else "Off"
-
         if self._attr_name.lower() == "booster":
             if value == 1:
                 return "On"
